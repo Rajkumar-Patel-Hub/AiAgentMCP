@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Playwright Tests",
+      "type": "shell",
+      "command": "npm",
+      "args": ["test"],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Tests (UI Mode)",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "test:ui"],
+      "group": {
+        "kind": "test"
+      }
+    },
+    {
+      "label": "Run Tests (Debug Mode)",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "test:debug"],
+      "group": {
+        "kind": "test"
+      }
+    },
+    {
+      "label": "Run Tests (Headed)",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "test:headed"],
+      "group": {
+        "kind": "test"
+      }
+    },
+    {
+      "label": "Show Test Report",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "test:report"],
+      "group": {
+        "kind": "test"
+      }
+    }
+  ]
+}
